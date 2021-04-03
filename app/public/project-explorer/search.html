@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            footer {
+                text-align: right;
+                padding: 2px;
+                margin-top: 75px;
+                margin-bottom: 50px;
+                background-color: rgb(226, 226, 226);
+                color: grey;
+            }
+            .blacktext {
+                color: black
+            }
+            .subheading {
+                color: grey;
+                font-size: small;
+            }
+            .container {
+                align-items: flex-start;
+            }
+        
+        </style>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>
+        <form class="form-inline" name="searchForm">
+           <input type="text" class="form-control" placeholder="Search Projects">
+           <button type="button" class="btn btn-outline-light">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="createproject.html">Submit</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+    <main>
+        <!--SECTION 1 (Search form)-->
+        <section>
+            <h2>Project Gallery</h2>
+            <div class="bg-light p-3 mx-auto w-75">
+                <form class="form-group" name="searchForm">
+                    <div class="form-row align-items-center">
+                        <div class="col-md-7"><input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Project Name, Authors, Abstract, Tags"/></div>
+                        <div class="input-group col-md-3">
+                            <div class="input-group-prepend">
+                                <label class="form-label input-group-text" for="inlineFormInputGroupSearchBy">Search By</label>
+                            </div>   
+                            <select class="form-control form-contol-lg" name="searchType">
+                                <option value="Name">Name</option>
+                                <option value="Abstract">Abstract</option>
+                                <option value="Authors">Authors</option>
+                                <option value="Tags">Tags</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2"><button type="submit" class="btn btn-lg btn-primary">Submit</button></div>
+                </form>
+            </div>
+
+        </section>
+        <!--Section 2 (Search results)-->
+        <section>
+            <h3>Search Result <span class="subheading">(0 results)</span></h3>
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-primary">Project Title</h4>
+                                <p class="text-secondary">Author 1, Author 2</p>
+                                <p>Some quick example on the card title and make up of the bulk of the card's content</p>
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                    
+                            </div>       
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-primary">Project Title</h4>
+                                <p class="text-secondary">Author 1, Author 2</p>
+                                <p>Some quick example on the card title and make up of the bulk of the card's content</p>
+                                <a href="#" class="card-link">#html</a>
+                                <a href="#" class="card-link">#css</a>
+                                <a href="#" class="card-link">#javascript</a>
+                    
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Project Explorer &copy; 2020 &middot; <span class="blacktext"><a href="#">Edconnect</a></span> </p>
+    </footer>
+</html>
