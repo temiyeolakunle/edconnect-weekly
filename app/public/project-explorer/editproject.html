@@ -65,11 +65,11 @@
             </div>
             <form class="form-group mx-auto w-75" name="editProject">
                 <div class="row">
-                    <div class="col"><label class="form-label">Project Name:</label><br><input type="text" class="form-control" placeholder="Project 1"/></div>
+                    <div class="col"><label class="form-label">Project Name:</label><br><input type="text" class="form-control" placeholder="Project 1" name="name"/></div>
                     <div class="col"><input type="file" class="form-control" placeholder="Click to open file browser"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><label class="form-label">Project Abstract:</label><br><textarea type="text" class="form-control" row="4" placeholder="Project 1 is a very interesting project"></textarea></div>
+                    <div class="col"><label class="form-label">Project Abstract:</label><br><textarea type="text" class="form-control" placeholder="Project 1 is a very interesting project" name="abstract"></textarea></div>
                     <div class="col">
                         <div class="card">
                             <div class="card-header">Project Files</div>
@@ -80,10 +80,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"><label class="form-label">Author(s)</label><br><input type="text" class="form-control" placeholder="John Doe"/></div>
+                    <div class="col-md-6"><label class="form-label">Author(s)</label><br><input type="text" class="form-control" placeholder="John Doe" name="authors"/></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"><label class="form-label">Tag(s):</label><br><input type="text" class="form-control" placeholder="#web"/></div>
+                    <div class="col-md-6"><label class="form-label">Tag(s):</label><br><input type="text" class="form-control" placeholder="#web" name="tags"/></div>
                 </div>
                 <div><button type="button" class="btn btn-primary m1">Save</button></div>
             </form>
